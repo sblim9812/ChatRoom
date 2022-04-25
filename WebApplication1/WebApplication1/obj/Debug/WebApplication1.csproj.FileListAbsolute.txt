@@ -90,3 +90,4 @@ D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebAppli
 D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
 D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.ModelVer_1.resources
 D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
+D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.Modelsupdated.resources

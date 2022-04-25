@@ -15,6 +15,9 @@ namespace WebApplication1.Models
         [Required]
         public string Text { get; set; }
 
+        [ScaffoldColumn(false)]
+        public DateTime? CreatedOn { get; set; }
+
         public int UserId { get; set; }
 
         [ForeignKey("UserId")]
