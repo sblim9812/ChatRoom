@@ -13,6 +13,12 @@ namespace WebApplication1.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        public ActionResult Index()
+        {
+            Session["UserId"] = 0;
+            return View();
+        }
+
         // GET: Account/Register
         [HttpGet]
         public ActionResult Register()
@@ -62,11 +68,14 @@ namespace WebApplication1.Controllers
             bool exists = db.Users.Any(u => u.Username == obj.Username && u.Password == obj.Password);
             if (exists)
             {
+                Session["UserId"] = db.Users.Single(x => x.Username == obj.Username).Id;
                 return RedirectToAction("Index", "ChatRoom");
             }
             ViewBag.Message = "Invalid Credentials!";
             return View();
         }
+
+
 
 
     }
