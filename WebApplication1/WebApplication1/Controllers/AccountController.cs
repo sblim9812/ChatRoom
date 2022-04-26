@@ -75,6 +75,13 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        // GET: Account/Logout
+        [HttpGet]
+        public ActionResult Logout()
+        {
+            Session["UserId"] = 0;
+            return RedirectToAction("Index","Home");
+        }
 
 
 

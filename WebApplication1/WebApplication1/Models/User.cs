@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,6 +21,7 @@ namespace WebApplication1.Models
         public string Email { get; set; }
 
         [ScaffoldColumn(false)]
+        [Display(Name ="Picture")]
         public string ImageUrl { get; set; }
 
         [ScaffoldColumn(false)]

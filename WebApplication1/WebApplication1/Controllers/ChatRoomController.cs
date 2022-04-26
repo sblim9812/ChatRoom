@@ -17,6 +17,11 @@ namespace WebApplication1.Controllers
         // GET: ChatRoom
         public ActionResult Index()
         {
+            int userId = Convert.ToInt32(Session["UserId"]);
+            if (userId == 0)
+            {
+                RedirectToAction("Login", "Account");
+            }
             var comments = db.Comments.Include(x => x.Replies).OrderByDescending(x => x.CreatedOn).ToList();
             return View(comments); 
         }
