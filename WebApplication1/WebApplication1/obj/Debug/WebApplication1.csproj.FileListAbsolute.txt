@@ -91,3 +91,7 @@ D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebAppli
 D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.ModelVer_1.resources
 D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
 D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.Modelsupdated.resources
+D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.ProductDB.resources
+D:\.det project\연습플젝1\WebApplication1\WebApplication1\bin\PagedList.dll
+D:\.det project\연습플젝1\WebApplication1\WebApplication1\bin\PagedList.xml
+D:\.det project\연습플젝1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.UpDown.resources

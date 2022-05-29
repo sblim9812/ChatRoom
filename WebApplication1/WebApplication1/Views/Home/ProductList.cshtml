@@ -1,0 +1,67 @@
+﻿@model IEnumerable<WebApplication1.Models.Product>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Qty)
+    </td>
+    @*<td>
+            <div class="div1">
+                <div class="div2"><a name="button" class="btn-mini btn btn-outline-secondary" value="first" data-menu="1"> Up </a></div>
+                <div class="div2"><a id="change" class="btn-mini btn btn-outline-secondary" data-menu="2">Down</a></div>
+            </div>
+        </td>*@
+
+<td>
+    @if (item.Up == 1)
+    {
+        using (Html.BeginForm("Up", "Home", new { @id = item.Id }, FormMethod.Post))
+        {
+            <input type="submit" name="Up" value="Up" class="btn btn-danger" style="margin-top:10px" />
+        }
+    }
+    else
+    {
+        using (Html.BeginForm("Up", "Home", new { @id = item.Id }, FormMethod.Post))
+        {
+            <input type="submit" name="Up" value="Up" class="btn btn-success" style="margin-top:10px" />
+        }
+    }
+
+    @using (Html.BeginForm("Down", "Home", FormMethod.Post, new { @id = item.Id }))
+    {
+        <input type="submit" name="Down" value="Down" class="btn btn-success" style="margin-top:10px" />
+        }
+
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+    </td>
+</tr>
+    }
+</table>
+@*@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))*@

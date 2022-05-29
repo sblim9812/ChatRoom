@@ -22,3 +22,17 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.div2 {
+    border: 1px solid;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+.clicked {
+    background: orange;
+}

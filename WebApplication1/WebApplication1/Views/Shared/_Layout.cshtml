@@ -1,7 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/Site.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - WebApplication1</title>
@@ -22,9 +24,11 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("ChatRoom", "Index", "ChatRoom")</li>
                     @*(화면표시이름, action이름, 컨트롤러)*@
                     <li>@Html.ActionLink("Register", "Register", "Account")</li>
                     <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                    
                 </ul>
             </div>
         </div>
